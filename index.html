@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Whiskey Etsy</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header"><h1>Etsy</h1>
+        <input type="text" placeholder="search for items or shops" size="35" id="search">
+            <button id="searchBtn"><b>Search</b></button>
+            <p class="headerRight">Sell on Etsy &nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;<button id="signInBtn">Sign in</button></p>
+            <p class="clearFloat"></p>
+            <p class="fr"><img id="cart" src="assets/cart.png"></p>
+        
+        </div><!--closes header-->
+        <div id="navBar">
+            <ul>
+                <li class="lBorder">Clothing &amp; Accessories</li>
+                <li>Jewelry</li>
+                <li>Craft Supplies &amp; Tools</li>
+                <li>Weddings</li>
+                <li>Entertainment</li>
+                <li>Home &amp; Living</li>
+                <li>Kids &amp; Baby</li>
+                <li class="rBorder">Vintage</li>
+            </ul>
+        </div><!--closes navBar-->
+        <p class="clearFloat"></p>
+        <div id="main">
+           <p class="fl"><b>Show results for:</b></p>
+           <p id="topCatMargin" class="topCatForWhis"><b>Top categories for "whiskey"</b></p>
+           <p class="clearFloat"></p>
+           <div id="allCategoriesList2"></div>
+            <div id="allCategoriesList">
+                <ul><!-- Get Ajax to dump here id allCategoriesList2, links for now-->
+                    <p></p><b>All Categories</b></p>
+                    <li><a href="https://www.etsy.com/search/home-and-living?q=whiskey&customizable=true">Home &amp; Living</a></li>
+                    <li><a href="https://www.etsy.com/search/art-and-collectibles?q=whiskey&customizable=true">Art &amp; Collectibles</a></li>
+                    <li><a href="https://www.etsy.com/search/weddings?q=whiskey&customizable=true">Weddings</a></li>
+                    <li><a href="https://www.etsy.com/search/clothing?q=whiskey&customizable=true">Clothing</a></li>
+                    <li><a href="https://www.etsy.com/search/paper-and-party-supplies?q=whiskey&customizable=true">Paper &amp; Party Supplies</a></li>
+                    <li><a href="https://www.etsy.com/search/jewelry?q=whiskey&customizable=true">Jewelry</a></li>
+                    <li><a href="https://www.etsy.com/search/accessories?q=whiskey&customizable=true">Accessories</a></li>
+                    <li><a href="https://www.etsy.com/search/craft-supplies-and-tools?q=whiskey&customizable=true">Craft Supplies &amp; Tools</a></li>
+                    <li><a href="https://www.etsy.com/search/bags-and-purses?q=whiskey&customizable=true">Bags &amp; Purses</a></li>
+                    <li><a href="https://www.etsy.com/search/bath-and-beauty?q=whiskey&customizable=true">Bath &amp; Beauty</a></li>
+                    <li><a href="https://www.etsy.com/search/shoes?q=whiskey&customizable=true">Shoes</a></li>
+                    <li><a href="https://www.etsy.com/search/books-movies-and-music?q=whiskey&customizable=true">Books, Movies &amp; Music</a></li>
+                    <li><a href="https://www.etsy.com/search/electronics-and-accessories?q=whiskey&customizable=true">Electronics &amp; Accessories</a></li>
+                    <li><a href="https://www.etsy.com/search/toys-and-games?q=whiskey&customizable=true">Toys &amp; Games</a></li>
+                    <li><a href="https://www.etsy.com/search/pet-supplies?q=whiskey&customizable=true">Pet Supplies</a></li>
+                </ul>
+            </div><!--closes all categories-->
+            
+            <div id="topCatWhiskey">
+                <img class="blankImages" src="#" width="350px" height="235"/>
+                <img class="blankImages" src="#" width="350px" height="235px"/>
+                <p></p>
+                <img class="blankImages fl" src="#" width="228px" height="180px"/>
+                <img class="blankImages" src="#" width="225px" height="180"/>
+                <img class="blankImages" src="#" width="225px" height="180"/>   
+            </div><!--closes top cat whiskey-->
+            
+            <p><b>Refine your search</b></p>
+            <div id="itemType">
+                <ul>
+                    <li><b>Item Type</b></li>
+                    <li><input type="radio" name="input" value="all items" checked><b>All Items</b></li>
+                    <li><input type="radio" name="input" value="handmade">Handmade</li>
+                    <li><input type="radio" name="input" value="vintage">Vintage</li>
+                </ul>
+                <hr width="90%">
+                <p><b>Price</b></p>
+                <p>&#36;<input class="lowHigh" type="text" placeholder="Low" size="6">&nbsp;&nbsp;to&nbsp;&nbsp;&#36;<input class="lowHigh" type="text" placeholder="High" size="6"></p>
+                
+                <!--<p class="arrow-right"></p>-->
+                <hr width="90%">
+                <p><b>Filter by color</b></p>
+                <ul id="boxes">
+                    <li id="boxRed" class="colorBoxes"></li>
+                    <li id="boxOrange" class="colorBoxes"></li>
+                    <li id="boxYellow" class="colorBoxes"></li>
+                    <li id="boxGreen" class="colorBoxes"></li>
+                    <li id="boxBlue" class="colorBoxes"></li>
+                    <li id="boxPurple" class="colorBoxes"></li>
+                    <li id="boxBlack" class="colorBoxes"></li>
+                    <li class="colorBoxes"></li>
+                </ul>
+                <p class="clearFloat"></p>
+                <hr width="90%">
+                <p><b>Ordering Options</b></p>
+                
+                    <input type="checkbox"><a>Accepts Etsy Gift Cards</a><br>
+                    <input type="checkbox"><a>Customizable</a>
+                
+                <hr width="90%">
+                
+                <p><b>Shop Location</b></p>
+                <input type="radio"><b>Anywhere</b><br>
+                <input type="radio"><b>United States</b>
+                <p><a>Choose a custom location</a></p>
+            </div><!--closes item type-->    
+           
+            <div id="allCatWhiskey"><!--Mustache insert-->
+               
+                
+                
+                
+            </div><!--closes all cat whiskey-->
+        </div><!--closes main-->
+        <div id="relatedToWhiskey">
+            <p class="relatedToMargin">Related to <b>whiskey</b></p>
+            <ul id="whiskeyDecanter">
+                <li><a href="https://www.etsy.com/search?q=whiskey+decanter&ref=related">whiskey decanter</a></li>
+                <li><a href="https://www.etsy.com/search?q=whiskey+barrel&ref=related">whiskey barrel</a></li>
+                <li><a href="https://www.etsy.com/search?q=whiskey+stones&ref=related">whiskey stones</a></li>
+                <li><a href="https://www.etsy.com/search?q=bourbon&ref=related">bourbon</a></li>
+            </ul>
+            <ul id="jackDaniel">
+                <li><a href="https://www.etsy.com/search?q=jack+daniels&ref=related">jack daniels</a></li>
+                <li><a href="https://www.etsy.com/search?q=cigar&ref=related">cigar</a></li>
+                <li><a href="https://www.etsy.com/search?q=scotch&ref=related">scotch</a></li>
+                <li><a href="https://www.etsy.com/search?q=beer&ref=related">beer</a></li>
+            </ul>
+            <ul id="whiskeyBottle">
+                <li><a href="https://www.etsy.com/search?q=whiskey+bottle&ref=related">whiskey bottle</a></li>
+                <li><a href="https://www.etsy.com/search?q=jameson&ref=related">jameson</a></li>
+            </ul>
+            <p class="clearFloat"></p>
+            <p class="footerMargin">Looking for shops? <a href="https://www.etsy.com/shop/whiskeynweddingbells?ref=shop_name_search_sugg">whiskeynweddingbells</a>, <a href="https://www.etsy.com/shop/WhiskeyDogWares?ref=shop_name_search_sugg">WhiskeyDogWares</a>, <a href="https://www.etsy.com/shop/WhiskeysWhims?ref=shop_name_search_sugg">WhiskeysWhims</a>. <a href="https://www.etsy.com/search/shops?q=whiskey&customizable=true&search_type=shops&search_query=whiskey">See more.</a></p>
+        </div><!--closes related To Whiskey-->
+        
+        <div id="subscribe">
+            <p><b>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</b></p>
+            <input id="inputEmail" type="text" name="email" placeholder="Enter your email">
+            <button id="subscribeBtn"><b>Subscribe</b></button>
+        </div><!--closes subscribe-->
+        
+        <div id="siteIndex">
+           <div id="divSite1">
+               <p>Turn your passion into a <br>business</p>
+               <button>Open a shop</button>
+               <p>Sell on Etsy</p>
+               <p>Seller Handbook</p>
+               <p>Etsy credit card reader</p>
+           </div>
+           <div id="divSite2">
+                <p>Join the community</p>
+                <p>Teams</p>
+                <p>Forums</p>
+                <p>Upcoming events</p>
+                <p>Affiliates</p>
+           </div>
+           <div id="divSite3">
+               <p>Discover and shop</p>
+               <p><a>Gift cards</a></p>
+               <p><a>Blog</a></p>
+               <p><a>Tastemakers</a></p>
+               <P><a>Mobile apps</a></P>
+               <p><a>Git registries</a></p>
+               <p><a>Wholesale</a></p>
+               <p><a>Manufacturing</a></p>
+               <p><a>Search</a></p>
+               <p><a>Etsy Finds</a></p>
+           </div>
+           <div id="divSite4">
+               <p>Get to know us</p>
+               <p><a>About</a></p>
+               <p><a>Policies</a></p>
+               <p><a>Careers</a></p>
+               <p><a>Press</a></p>
+               <p><a>Developers</a></p>
+               <p><a>Investors</a></p>
+           </div>
+           <div id="divSite5">
+               <p>Follow Etsy</p>
+               <p><a>Facebook</a></p>
+               <p><a>Twitter</a></p>
+               <p><a>Pinterest</a></p>
+               <p><a>Instagram</a></p>
+           </div>
+            <p class="clearFloat"></p>
+        </div><!--closes site Index-->
+        
+        <div id="footer"></div><!--closes footer-->	
+        
+    </div><!--closes container-->
+ 
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<!-- Script mustache template for ALL CATEGORIES-->
+<script type="x-tmpl-mustache" id="allCatTemplate">
+    {{#allCatUpdates}}
+        <ul>
+            <li>{{listingId}}</li>
+            <li><img class="allCatImages" src="{{url_75x75}}" /></li>
+            <li>{{price}}</li>
+        </ul>
+    {{/allCatUpdates}}
+</script>
+
+
+</body>
+</html>

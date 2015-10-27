@@ -1,0 +1,251 @@
+body {font-family: arial, sans-serif;}
+
+#container {
+    padding: 1em 0em;
+    width: 1500px;
+    background-color: rgb(245, 245, 241);
+}
+
+#main {
+    background-color: rgb(245, 245, 241);
+    padding: 0 0 0 6em;
+    width: 1400px;
+    border-top: 1px solid rgb(222, 222, 218);
+}
+
+h1 {
+    font-family: 'Slabo 27px', serif;
+    color: rgb(247, 100, 0);
+    float: left;
+    letter-spacing: .05em;
+    font-size: 50px;
+    margin: 4px 0 0 0;
+    padding: 0 0 0 2em;
+}
+
+#search {
+    padding: 10px;
+    margin: 20px 0px 0 25px;
+}
+
+.headerRight {
+    color: rgb(0, 146, 183);
+    font-size: 1.2em;
+    float:right;
+    margin-left: 70px;
+}
+
+#signInBtn {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid rgb(0, 146, 183);
+}
+
+img#cart{
+    position: absolute;
+    margin: -107px 0 0 18px;
+    padding: 20px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    background-color: rgb(43, 168, 198);
+    color: white;
+    border: 1px solid rgb(0, 146, 183);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -6px;
+}
+
+
+#navBar ul {
+    padding: 0 0 0 5em;
+}
+
+#navBar li {
+    float: left;
+    padding: 20px;
+    color: rgb(85, 85, 85);
+}
+
+#topCatMargin {
+    padding-left: 400px;
+}
+
+navBar a:link {}
+navBar a:visited {}
+navBar a:hover {}
+
+.fl {float: left;}
+
+.fr {float: right;}
+
+.clearFloat {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(0, 138, 173);
+}
+a:visited {}
+a:hover {text-decoration: underline;}
+a:active {}
+
+#allCategoriesList {
+    background-color: white;
+    width: 300px;
+    padding: 0 20px;
+    float: left;
+}
+
+#allCategoriesList li {
+    color: rgb(0, 138, 173);
+    line-height: 2em;
+}
+
+#itemType {
+    background-color: white;
+    width: 300px;
+    padding: 0 20px;
+    line-height: 2em;
+}
+
+ul {list-style: none;}
+
+#topCatWhiskey {
+    padding: 2em;
+}
+
+allCatWhiskey {
+    float: left;
+}
+
+.lowHigh {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.blankImages {
+    background-color: lightgray;
+    padding: 1.5em;
+}
+
+
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid rgb(85, 85, 85);
+}
+
+.colorBoxes {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 3px;
+}
+
+#boxes li{
+    float: left;
+    display: inline;
+    width: 6%;
+    padding: 5px;
+}
+
+#boxRed {background-color: rgb(247, 0, 41);}
+#boxOrange {background-color: rgb(255, 127, 0);}
+#boxYellow {background-color: rgb(244, 206, 0);}
+#boxGreen {background-color: rgb(0, 196, 0);}
+#boxBlue {background-color: rgb(0, 204, 245);}
+#boxPurple {background-color: rgb(167, 0, 247);}
+#boxBlack {background-color: black;}
+
+
+.border {
+    border: 2px solid rgb(85, 85, 85);
+}
+
+#relatedToWhiskey {
+    width: 1400px;
+    background-color: rgb(245, 245, 241);
+    padding: 0 0 0 6em;
+}
+
+#whiskeyDecanter {
+    float: left;
+    margin-left: 250px;
+    padding: 0 70px;
+    line-height: 1.6em;
+}
+#jackDaniel {
+    float: left;
+    padding: 0 70px;
+    line-height: 1.6em;
+}
+#whiskeyBottle {
+    float: left;
+    padding: 0 70px;
+    line-height: 1.6em;
+}
+
+.relatedToMargin {
+    margin-left: 320px;
+}
+
+#subscribe {
+    border: 3px solid rgb(239, 239, 235);
+    margin: auto;
+    width: 1300px;
+    background-color: rgb(239, 239, 235);
+    text-align: center;
+    padding: 2em;
+}
+
+#inputEmail {
+    padding: 1em;
+}
+
+#subscribeBtn {
+    padding: 1em;
+    background-color: rgb(43, 168, 198);
+    color: white;
+    border: 1px solid rgb(0, 146, 183);
+    border-radius: 5px;
+}
+
+#siteIndex {
+    background-color: rgb(245, 245, 241);
+    width: 1500px;
+}
+
+#divSite1 {
+    float: left;
+    padding: 1em 3em;
+}
+
+#divSite2 {
+    float: left;
+    padding: 1em 3em;
+}
+
+#divSite3 {
+    float: left;
+    padding: 1em 3em;
+}
+
+#divSite4 {
+    float: left;
+    padding: 1em 3em;
+}
+
+#divSite5 {
+    float: left;
+    padding: 1em 3em;
+}
